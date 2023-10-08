@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Products - Camping Equipment Store</title>
+</head>
+<body>
+    <header>
+        <nav class="desktop-navigation-menu">
+            <div class="container">
+                <ul class="desktop-menu-category-list">
+                    <li class="menu-category">
+                        <a href="index.html" class="menu-title">Home</a>
+                    </li>
+                    <li class="menu-title">
+                        <a href="products.html" class="menu-title">Products</a>
+                    </li>
+                    <li class="menu-title">
+                        <a href="basket.html" class="menu-title">Basket</a>
+                    </li>
+                    <li class="menu-title">
+                        <a href="offers.html" class="menu-title">Offers</a>
+                    </li>
+                    <li class="menu-title">
+                        <a href="reviews.html" class="menu-title">Reviews</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- <h1>Our Products</h1>
+        <div class="product">
+            <img src="product1.jpg" alt="Camping Tent">
+            <h2>Camping Tent</h2>
+            <p>Spacious 4-person tent with easy setup.</p>
+            <a href="product1.html">Details</a>
+        </div>
+        <!-- Add more products as needed -->
+    </main>
+
+
+<div class="product-container">
+
+  <div class="container">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar has-scrollbar" data-mobile-menu>
+
+      <div class="sidebar-category">
+
+        <div class="sidebar-top">
+          <h2 class="sidebar-title">Category</h2>
+
+          <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="sidebar-menu-category-list">
+
+          <li class="sidebar-menu-category">
+
+            <button class="sidebar-accordion-menu" data-accordion-btn>
+
+              <div class="menu-title-flex">
+                <img src="./assets/images/icons/tent.svg" alt="tents" width="20" height="20" class="menu-title-img">
+
+                <p class="menu-title">Tents</p>
+              </div>
+
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="sidebar-submenu-category-list" data-accordion>
+
+              <li class="sidebar-submenu-category">
+                <a href="#" class="sidebar-submenu-title">
+                  <p class="product-name">Backpacking Tents</p>
+                  <data value="12" class="stock" title="Available Stock">12</data>
+                </a>
+              </li>
+
+              <li class="sidebar-submenu-category">
+                <a href="#" class="sidebar-submenu-title">
+                  <p class="product-name">Cabin Tents</p>
+                  <data value="8" class="stock" title="Available Stock">8</data>
+                </a>
+              </li>
+
+              <li class="sidebar-submenu-category">
+                <a href="#" class="sidebar-submenu-title">
+                  <p class="product-name">Pop Up Tents</p>
+                  <data value="15" class="stock" title="Available Stock">15</data>
+                </a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="sidebar-menu-category">
+
+            <button class="sidebar-accordion-menu" data-accordion-btn>
+
+              <div class="menu-title-flex">
+                <img src="./assets/images/icons/backpack.svg" alt="backpacks" class="menu-title-img" width="20" height="20">
+
+                <p class="menu-title">Backpacks</p>
+              </div>
+
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="sidebar-submenu-category-list" data-accordion>
+
+              <li class="sidebar-submenu-category">
+                <a href="#" class="sidebar-submenu-title">
+                  <p class="product-name">Daypacks</p>
+                  <data value="20" class="stock" title="Available Stock">20</data>
+                </a>
+              </li>
+
+              <li class="sidebar-submenu-category">
+                <a href="#" class="sidebar-submenu-title">
+                  <p class="product-name">Multi-Day Packs</p>
+                  <data value="12" class="stock" title="Available Stock">12</data>
+                </a>
+              </li>
+
+              <li class="sidebar-submenu-category">
+                <a href="#" class="sidebar-submenu-title">
+                  <p class="product-name">Ultralight Packs</p>
+                  <data value="8" class="stock" title="Available Stock">8</data>
+                </a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="sidebar-menu-category">
+
+            <button class="sidebar-accordion-menu" data-accordion-btn>
+
+              <div class="menu-title-flex">
+                <img src="./assets/images/icons/sleeping-bag.svg" alt="sleeping bags" class="menu-title-img" width="20" height="20">
+
+                <p class="menu-title">Sleeping Bags</p>
+              </div>
+
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="sidebar-submenu-category-list" data-accordion>
+
+              <li class="sidebar-submenu-category">
+                <a href="#" class="sidebar-submenu-title">
+                  <p class="product-name">Mummy Bags</p>
+                  <data value="14" class="stock" title="Available Stock">14</data>
+                </a>
+              </li>
+
+              <li class="sidebar-submenu-category">
+                <a href="#" class="sidebar-submenu-title">
+                  <p class="product-name">Rectangular Bags</p>
+                  <data value="9" class="stock" title="Available Stock">9</data>
+                </a>
+              </li>
+
+              <li class="sidebar-submenu-category">
+                <a href="#" class="sidebar-submenu-title">
+                  <p class="product-name">Double Bags</p>
+                  <data value="6" class="stock" title="Available Stock">6</data>
+                </a>
+              </li>
+
+            </ul>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="product-showcase">
+
+        <h3 class="showcase-heading">best sellers</h3>
+
+        <div class="showcase-wrapper">
+
+          <div class="showcase-container">
+
+            <div class="showcase">
+
+              <a href="#" class="showcase-img-box">
+                <img src="./assets/images/products/sleeping-bag.jpg" alt="mummy sleeping bag" width="75" height="75" class="showcase-img">
+              </a>
+
+              <div class="showcase-content">
+
+                <a href="#">
+                  <h4 class="showcase-title">Mummy Sleeping Bag</h4>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <del>$100</del>
+                  <p class="price">$80</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <a href="#" class="showcase-img-box">
+                <img src="./assets/images/products/hiking-boots.jpg" alt="waterproof hiking boots" class="showcase-img" width="75" height="75">
+              </a>
+
+              <div class="showcase-content">
+
+                <a href="#">
+                  <h4 class="showcase-title">Waterproof Hiking Boots</h4>
+                </a>
+                
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <del>$120</del>
+                  <p class="price">$100</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <a href="#" class="showcase-img-box">
+                <img src="./assets/images/products/camping-chair.jpg" alt="foldable camping chair" class="showcase-img" width="75" height="75">
+              </a>
+
+              <div class="showcase-content">
+
+                <a href="#">
+                  <h4 class="showcase-title">Foldable Camping Chair</h4>
+                </a>
+                
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <del>$50</del>
+                  <p class="price">$40</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <a href="#" class="showcase-img-box">
+                <img src="./assets/images/products/camp-stoves.jpg" alt="portable camp stoves" class="showcase-img" width="75" height="75">
+              </a>
+
+              <div class="showcase-content">
+
+                <a href="#">
+                  <h4 class="showcase-title">Portable Camp Stoves</h4>
+                </a>
+                
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <del>$80</del>
+                  <p class="price">$60</p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="product-box">
+
+      <!-- PRODUCT MINIMAL -->
+
+      <div class="product-minimal">
+
+        <div class="product-showcase">
+
+          <h2 class="title">New Arrivals</h2>
+
+          <div class="showcase-wrapper has-scrollbar">
+
+            <div class="showcase-container">
+
+              <div class="showcase">
+
+                <a href="#" class="showcase-img-box">
+                  <img src="./assets/images/products/lantern.jpg" alt="led lantern" width="70" class="showcase-img">
+                </a>
+
+                <div class="showcase-content">
+
+                  <a href="#">
+                    <h4 class="showcase-title">LED Lantern</h4>
+                  </a>
+
+                  <a href="#" class="showcase-category">Lighting</a>
+
+                  <div class="price-box">
+                    <p class="price">$25</p>
+                    <del>$30</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+              
+                <a href="#" class="showcase-img-box">
+                  <img src="./assets/images/products/camping-pillow.jpg" alt="inflatable camping pillow" class="showcase-img" width="70">
+                </a>
+              
+                <div class="showcase-content">
+              
+                  <a href="#">
+                    <h4 class="showcase-title">Inflatable Camping Pillow</h4>
+                  </a>
+              
+                  <a href="#" class="showcase-category">Sleeping</a>
+              
+                  <div class="price-box">
+                    <p class="price">$15</p>
+                    <del>$20</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <a href="#" class="showcase-img-box">
+                  <img src="./assets/images/products/camping-blanket.jpg" alt="outdoor waterproof blanket" class="showcase-img" width="70">
+                </a>
+              
+                <div class="showcase-content">
+              
+                  <a href="#">
+                    <h4 class="showcase-title">Outdoor Waterproof Blanket</h4>
+                  </a>
+              
+                  <a href="#" class="showcase-category">Blankets</a>
+              
+                  <div class="price-box">
+                    <p class="price">$35</p>
+                    <del>$40</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <a href="#" class="showcase-img-box">
+                  <img src="./assets/images/products/camping-table.jpg" alt="folding camp table" class="showcase-img" width="70">
+                </a>
+              
+                <div class="showcase-content">
+              
+                  <a href="#">
+                    <h4 class="showcase-title">Folding Camp Table</h4>
+                  </a>
+              
+                  <a href="#" class="showcase-category">Furniture</a>
+              
+                  <div class="price-box">
+                    <p class="price">$60</p>
+                    <del>$70</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+            </div>
+
+            <div class="showcase-container">
+            
+              <div class="showcase">
+            
+                <a href="#" class="showcase-img-box">
+                  <img src="./assets/images/products/hiking-poles.jpg" alt="adjustable hiking poles" class="showcase-img" width="70">
+                </a>
+            
+                <div class="showcase-content">
+            
+                <a href="#">
+                  <h4 class="showcase-title">Adjustable Hiking Poles</h4>
+                </a>
+            
+                <a href="#" class="showcase-category">Hiking</a>
+            
+                <div class="price-box">
+                  <p class="price">$70</p>
+                  <del>$80</del>
+                </div>
+            
+                </div>
+            
+              </div>
+            
+              <div class="showcase">
+            
+                <a href="#" class="showcase-img-box">
+                  <img src="./assets/images/products/camping-cot.jpg" alt="folding camping cot" class="showcase-img" width="70">
+                </a>
+            
+                <div class="showcase-content">
+            
+                <a href="#">
+                  <h4 class="showcase-title">Folding Camping Cot</h4>
+                </a>
+            
+                <a href="#" class="showcase-category">Furniture</a>
+            
+                <div class="price-box">
+                  <p class="price">$100</p>
+                  <del>$120</del>
+                </div>
+            
+                </div>
+            
+              </div>
+            
+              <div class="showcase">
+            
+                <a href="#" class="showcase-img-box">
+                  <img src="./assets/images/products/camping-utensils.jpg" alt="camping utensil set" class="showcase-img" width="70">
+                </a>
+            
+                <div class="showcase-content">
+            
+                <a href="#">
+                  <h4 class="showcase-title">Camping Utensil Set</h4>
+                </a>
+            
+                <a href="#" class="showcase-category">Kitchen</a>
+            
+                <div class="price-box">
+                  <p class="price">$20</p>
+                  <del>$25</del>
+                </div>
+            
+                </div>
+            
+              </div>
+            
+              <div class="showcase">
+            
+                <a href="#" class="showcase-img-box">
+                  <img src="./assets/images/products/sun-shelter.jpg" alt="pop up sun shelter" class="showcase-img" width="70">
+                </a>
+            
+                <div class="showcase-content">
+            
+                <a href="#">
+                  <h4 class="showcase-title">Pop Up Sun Shelter</h4>
+                </a>
+            
+                <a href="#" class="showcase-category">Shelters</a>
+            
+                <div class="price-box">
+                  <p class="price">$80</p>
+                  <del>$100</del>
+                </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="product-showcase">
+        
+          <h2 class="title">Trending</h2>
+        
+          <div class="showcase-wrapper  has-scrollbar">
+          
+            <div class="showcase-container">
+        
+              <div class="showcase">
+        
+                <a href="#" class="showcase-img-box">
+                  <img src="./assets/images/products/camping-knife.jpg" alt="multi-tool camping knife" class="showcase-img" width="70">
+                </a>
+        
+                <div class="showcase-content">
+        
+                  <a href="#">
+                    <h4 class="showcase-title">Multi-Tool Camping Knife</h4>
+                  </a>
+        
+                  <a href="#" class="showcase-category">Tools</a>
+        
+                  <div class="price-box">
+                    <p class="price">$35</p>
+                    <del>$40</del>
+                  </div>
+        
+                </div>
+        
+              </div>
+        
+              <div class="showcase">
+        
+                <a href="#" class="showcase-img-box">
+                  <img src="./assets/images/products/sleeping-pad.jpg" alt="self-inflating sleeping pad" class="showcase-img" width="70">
+                </a>
+        
+                <div class="showcase-content">
+        
+                  <a href="#">
+                    <h4 class="showcase-title">Self-Inflating Sleeping Pad</h4>
+                  </a>
+        
+                  <a href="#" class="showcase-category">Sleeping</a>
+        
+                  <div class="price-box">
+                    <p class="price">$80</p>
+                    <del>$100</del>
+                  </div>
+        
+                </div>
+        
+              </div>
+              
+
+</body>
+</html>

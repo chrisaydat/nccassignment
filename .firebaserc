@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "nccassign",
+    "staging": "nccassign"
+  },
+  "targets": {},
+  "etags": {}
+}

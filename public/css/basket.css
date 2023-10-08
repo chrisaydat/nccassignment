@@ -1,0 +1,26 @@
+/* basket.css */
+
+/* Center-align the main heading */
+main h1 {
+    text-align: center;
+}
+
+/* Center-align the basket container */
+.basket-container {
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Center-align the checkout button */
+.checkout-button {
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
