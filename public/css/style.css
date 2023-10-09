@@ -170,10 +170,26 @@ footer ul li a {
   background-color: #555;
 }
 
-/* Animated Text Search Plugin (Placeholder) */
+
 #search-plugin {
-  /* Add styles for the animated text search plugin */
+  width: 300px; /* Adjust the width as needed */
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  transition: all 0.3s ease-in-out; /* Animation duration and easing */
 }
+
+#search-plugin::placeholder {
+  color: #999; /* Placeholder text color */
+}
+
+#search-plugin:focus {
+  border-color: #007bff; /* Border color when focused */
+  box-shadow: 0 0 5px 0 #007bff; /* Box shadow when focused */
+  width: 350px; /* Adjust the width on focus */
+}
+
 
 /* Input field styles */
 #search-input {
