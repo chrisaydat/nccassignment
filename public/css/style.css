@@ -8,7 +8,7 @@ body, h1, h2, p, ul, li, a {
 /* Apply a background color and set font styles */
 body {
   background-color: black;
-  font-family: Arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   color: #fff;
 }
 
