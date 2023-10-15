@@ -174,7 +174,7 @@ footer ul li a {
   background-color: #555;
 }
 
-/* Trigger the modal when :target is present in the URL */
+
 :target .modal {
   display: block;
 }
@@ -184,11 +184,20 @@ footer ul li a {
   top: 50%;
 }
 
-/* Styles for the search bar */
+
 .search-box {
   width: 90%;
   height: 70px;
-  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2244b3;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
 }
 
 .input-search {
@@ -243,55 +252,6 @@ footer ul li a {
   background-color: transparent;
   border-bottom: 1px solid rgba(255, 0, 0, 0.5);
   transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
-}
-
-.product-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 200px;
-  margin: 10px auto;
-  text-align: center;
-  font-family: 'Courier New', Courier, monospace;
-  padding: 20px;
-
-}
-
-.price {
-  color: grey;
-  font-size: 22px;
-}
-
-.card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.card button:hover {
-  opacity: 0.7;
-}
-
-.info-card {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr); /* Creates 3 columns */
-  grid-gap: 10px; /* Adjust the gap as needed */
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin: 20px;
-  text-align: center;
-  font-family: 'Courier New', Courier, monospace;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Media query to make it responsive */
@@ -440,4 +400,53 @@ button {
 .catalog-item p {
     color: #E44D26;
     font-weight: bold;
+}
+
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates a row of 3 columns */
+  grid-gap: 20px; /* Adjust the gap between grid items */
+  justify-items: center; /* Centers the items horizontally */
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  margin: 10px auto;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.info-card {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Creates 1 column */
+  grid-gap: 10px; /* Adjust the gap as needed */
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
