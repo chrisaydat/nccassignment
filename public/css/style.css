@@ -258,7 +258,7 @@ footer ul li a {
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
   padding: 20px;
-  
+
 }
 
 .price {
@@ -406,3 +406,38 @@ button {
   }
 }
 
+/* Catalog Styles */
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.catalog-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform .2s ease-in-out;
+}
+
+.catalog-item:hover {
+    transform: scale(1.05);
+}
+
+.catalog-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.catalog-item h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.catalog-item p {
+    color: #E44D26;
+    font-weight: bold;
+}
