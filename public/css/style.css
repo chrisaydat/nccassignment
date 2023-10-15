@@ -380,14 +380,14 @@ button {
 }
 
 /* Styles for mobile screens */
-@media (max-width: 767px) {
+@media (max-width: 67px) {
   .review-form {
       padding: 10px;
   }
 }
 
 /* Styles for desktop screens */
-@media (min-width: 768px) {
+@media (min-width: 67px) {
   .review-form {
       padding: 20px;
   }
