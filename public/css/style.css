@@ -244,3 +244,64 @@ footer ul li a {
   border-bottom: 1px solid rgba(255, 0, 0, 0.5);
   transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
+
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  margin: 20px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.info-card {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Creates 3 columns */
+  grid-gap: 10px; /* Adjust the gap as needed */
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Media query to make it responsive */
+@media (max-width: 768px) {
+  .info-card {
+    grid-template-columns: repeat(2, 1fr); /* Adjust for 2 columns on smaller screens */
+  }
+}
+
+/* Media query for even smaller screens, like mobile */
+@media (max-width: 480px) {
+  .info-card {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+  }
+}
