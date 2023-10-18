@@ -23,18 +23,18 @@
 <section class="offers-packages">
     <h1>Special Offers and Packages</h1>
 
-    <!-- Catalog-style Plugin (Placeholder) -->
+   
     <div id="catalog-plugin">
-        <!-- Display offers and packages catalog here (plugin content) -->
+        
     </div>
 
-    <!-- Animated Text Search Plugin (Placeholder) -->
+    
     <div id="search-plugin">
         <input type="text" id="search-input" placeholder="Search for deals...">
-        <!-- Display animated search results here (plugin content) -->
+       
     </div>
 
-    <!-- Grid Container for Offers -->
+    
     <div class="grid-container">
         <div class="grid-item offer1">
             <div class="slideshow">
@@ -54,24 +54,6 @@
     </ul>
 </footer>
 
-<script>
-    // JavaScript code for the slideshow
-    document.addEventListener("DOMContentLoaded", function() {
-        const slideshows = document.querySelectorAll('.slideshow');
-
-        slideshows.forEach((slideshow) => {
-            let index = 0;
-            const slides = slideshow.querySelectorAll('.slide');
-            slides[index].style.left = '0%'; // Show the first slide
-
-            setInterval(() => {
-                slides[index].style.left = '100%'; // Hide the current slide
-                index = (index + 1) % slides.length; // Move to the next slide
-                slides[index].style.left = '0%'; // Show the next slide
-            }, 3000); // Change every 3 seconds
-        });
-    });
-</script>
 
 </body>
 </html>
