@@ -1,18 +1,18 @@
-/* Reset some default browser styles */
+
 body, h1, h2, p, ul, li, a {
   margin: 0;
   padding: 0;
-  text-decoration: none; /* Remove underline from links */
+  text-decoration: none; 
 }
 
-/* Apply a background color and set font styles */
+
 body {
   background-color: black;
   font-family: 'Courier New', Courier, monospace;
   color: #fff;
 }
 
-/* Style the navigation bar */
+
 nav {
   background-color: #333;
   color: #fff;
@@ -32,22 +32,22 @@ nav ul li {
 nav ul li a {
   color: #fff;
   font-weight: bold;
-  transition: color 0.3s; /* Add a smooth color transition on hover */
+  transition: color 0.3s; 
 }
 
-/* Apply hover effect to navigation links */
+
 nav ul li a:hover {
-  color: red; /* Change the color on hover */
+  color: red; 
 }
 
-/* Style the header image */
+
 header img {
   width: 100%;
   max-height: 300px;
   object-fit: cover;
 }
 
-/* Style the main content section */
+
 section {
   padding: 20px;
   text-align: center;
@@ -63,7 +63,7 @@ section p {
   margin-bottom: 20px;
 }
 
-/* Style the image grid */
+
 .image-grid {
   display: flex;
   justify-content: space-around;
@@ -84,7 +84,7 @@ section p {
   object-fit: cover;
 }
 
-/* Style the footer */
+
 footer {
   background-color: #333;
   color: #fff;
@@ -106,7 +106,7 @@ footer ul li a {
   font-weight: bold;
 }
 
-/* Style the sample plugin (customize as needed) */
+
 #sample-plugin {
   background-color: #fff;
   padding: 20px;
@@ -115,7 +115,7 @@ footer ul li a {
   text-align: center;
 }
 
-/* Styles for the modal */
+
 .modal {
   display: none;
   position: fixed;
@@ -145,7 +145,7 @@ footer ul li a {
   font-size: 20px;
 }
 
-/* Style the Email Sign-up Form within the Modal */
+
 #email-signup-form label {
   display: block;
   margin-bottom: 10px;
@@ -190,7 +190,7 @@ footer ul li a {
     height: 70px;
     position: fixed;
     display: flex;
-    justify-content: center; /* Add this line to center the search box */
+    justify-content: center; 
   }
 
 
@@ -248,17 +248,17 @@ footer ul li a {
   transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
 
-/* Media query to make it responsive */
+
 @media (max-width: 768px) {
   .info-card {
-    grid-template-columns: repeat(2, 1fr); /* Adjust for 2 columns on smaller screens */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
-/* Media query for even smaller screens, like mobile */
+
 @media (max-width: 480px) {
   .info-card {
-    grid-template-columns: 1fr; /* Single column on very small screens */
+    grid-template-columns: 1fr; 
   }
 }
 
@@ -300,9 +300,9 @@ h3 {
   color: #fff;
 }
 
-/* Shared styles for both mobile and desktop */
+
 .review-form {
-  max-width: 400px; /* Adjust the maximum width as needed */
+  max-width: 400px; 
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -335,14 +335,14 @@ button {
   cursor: pointer;
 }
 
-/* Styles for mobile screens */
+
 @media (max-width: 67px) {
   .review-form {
       padding: 10px;
   }
 }
 
-/* Styles for desktop screens */
+
 @media (min-width: 67px) {
   .review-form {
       padding: 20px;
@@ -360,7 +360,7 @@ button {
   }
 }
 
-/* Catalog Styles */
+
 .catalog-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -398,9 +398,9 @@ button {
 
 .product-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Creates a row of 3 columns */
-  grid-gap: 20px; /* Adjust the gap between grid items */
-  justify-items: center; /* Centers the items horizontally */
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 20px; 
+  justify-items: center; 
 }
 
 .card {
@@ -435,8 +435,8 @@ button {
 
 .info-card {
   display: grid;
-  grid-template-columns: repeat(1, 1fr); /* Creates 1 column */
-  grid-gap: 10px; /* Adjust the gap as needed */
+  grid-template-columns: repeat(1, 1fr); 
+  grid-gap: 10px; 
   border: 1px solid #ccc;
   padding: 20px;
   margin: 20px;
@@ -446,21 +446,21 @@ button {
 }
 
 
-/* Offers and Packages Section */
+
 .offers-packages {
   padding: 20px;
 }
 
-/* Grid Container */
+
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
-  grid-template-rows: auto auto; /* Two rows */
-  gap: 20px; /* Gap between grid items */
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: auto auto; 
+  gap: 20px; 
   padding: 20px;
 }
 
-/* Grid Items */
+
 .grid-item {
   background-color: white;
   padding: 10px;
@@ -472,18 +472,18 @@ button {
   justify-content: center;
 }
 
-/* Slideshow */
+
 .slideshow {
   position: relative;
   width: 100%;
-  height: 490px; /* Adjust height as needed */
+  height: 490px; 
   overflow: hidden;
 }
 
 .slide {
   position: absolute;
   top: 0;
-  left: 100%; /* Initially place images to the right */
+  left: 100%; 
   width: 100%;
   height: 100%;
   object-fit: cover;
