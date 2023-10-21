@@ -531,3 +531,41 @@ card button:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.basket {
+  margin: 20px;
+  padding: 20px;
+  background-color: #000;
+  border: 1px solid #ccc;
+}
+
+.basket-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #000;
+  border: 1px solid #ddd;
+}
+
+.basket-total {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  text-align: right;
+  font-weight: bold;
+}
+
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  height: auto;
+}

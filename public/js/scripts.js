@@ -1,26 +1,26 @@
-// Sample catalog data (you can replace this with your own data)
-const catalogData = [
-    { name: "Product 1", price: "$19.99" },
-    { name: "Product 2", price: "$24.99" },
-    { name: "Product 3", price: "$29.99" },
-    // Add more items as needed
-];
+let slideIndex = 0;
 
-// Function to generate catalog content
-function generateCatalogContent() {
-    const catalogContainer = document.getElementById("catalog-plugin");
+// Function to show the slides
+function showSlides() {
+    const slides = document.getElementsByClassName("mySlides");
 
-    catalogData.forEach((item) => {
-        const productCard = document.createElement("div");
-        productCard.classList.add("product-card");
-        productCard.innerHTML = `
-            <h3>${item.name}</h3>
-            <p class="price">${item.price}</p>
-            <button>Add to Cart</button>
-        `;
-        catalogContainer.appendChild(productCard);
-    });
+    // Hide all slides
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    // Increment slideIndex and reset if necessary
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+
+    // Display the current slide
+    slides[slideIndex - 1].style.display = "block";
+
+    // Call the function again after 2 seconds (2000 milliseconds)
+    setTimeout(showSlides, 2000);
 }
 
-// Call the function to generate catalog content
-generateCatalogContent();
+// Initial call to start the slideshow
+showSlides();
