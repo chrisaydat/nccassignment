@@ -65,7 +65,7 @@ section p {
 /* Styles for an image grid */
 .image-grid {
   display: flex;
-  justify-content: space around;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 20px;
 }
