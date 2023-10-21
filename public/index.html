@@ -31,6 +31,23 @@
     <section>
         <h1>Welcome to RCC - Retail Camping Company</h1>
         <p>Explore the Great Outdoors with Quality Camping Gear</p>
+        <div id="clock-plugin">
+            <h2>Current Time:</h2>
+            <p id="clock"></p>
+        </div>
+
+        <script>
+            function updateTime() {
+                const now = new Date();
+                const hours = now.getHours();
+                const minutes = now.getMinutes();
+                const seconds = now.getSeconds();
+                const timeString = `${hours}:${minutes}:${seconds}`;
+                document.getElementById("clock").textContent = timeString;
+            }
+
+            setInterval(updateTime, 1000);
+        </script>
   
         
         <div class="image-grid">
@@ -59,7 +76,53 @@
             <p>Start your outdoor journey with RCC - Your trusted companion for all things camping.</p>
         </div>
     </section>
+
+
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Subscribe to our newsletter</h2>
+        <p>Enter your email address to receive updates on our latest products and offers:</p>
+        <form>
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</div>
+
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the close button
+    var closeBtn = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the close button, close the modal
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    // Show the modal when the page is loaded
+    window.onload = function() {
+        modal.style.display = "block";
+    }
+</script>
   
+    <div id="weather-plugin">
+        <iframe 
+        width="100%" 
+        height="400" 
+        src="https://www.accuweather.com/en/mauritania/219793/weather-forecast/219793" 
+        ></iframe>
     <div id="sample-plugin">
         <iframe
             width="100%"
@@ -70,18 +133,13 @@
             allowfullscreen
         ></iframe>
     </div>
-    <div id="youtube-plugin">
-        <iframe 
-        width="100%" 
-        height="400" 
-        src="https://www.youtube.com/watch?v=fk2nkksxpwQautoplay=1&mute=1" 
-        ></iframe>
-    </div>
-    <h2>Camping Brands</h2>
-    <iframe src="brands.html" 
+<div id="youtube-plugin">
+    <iframe 
     width="100%" 
-    height="400" >
-</iframe>
+    height="400" 
+    src="https://www.youtube.com/embed/fk2nkksxpwQ?autoplay=1&mute=1" 
+    ></iframe>
+</div>
     <footer>
         <ul>
             <li><a href="fb.com"><i class="fab fa-facebook"></i></a></li>
